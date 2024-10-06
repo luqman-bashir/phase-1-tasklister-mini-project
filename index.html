@@ -16,10 +16,24 @@
     </form>
 
     <div id="list">
-      <h2>My Todos:</h2>
+      <h2> HISTORY:</h2>
       <ul id="tasks">
       </ul>
     </div>
+    <h1>Task Input Form</h1>  
+    <form id="taskForm">  
+        <div id="taskInputs">  
+            <div>  
+                <input type="text" placeholder="User" required>  
+                <input type="number" placeholder="Duration (hours)" required>  
+                <input type="date" required>  
+            </div>  
+        </div>  
+        <button type="button" id="addTaskButton">Add Task</button>  
+        <button type="submit">Submit</button>  
+    </form>  
+
+    <div id="output"></div>  
 
     <script src="./src/index.js"></script>
   </div>
