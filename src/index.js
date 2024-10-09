@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function handleToDo(todo){
   let p =document.createElement('p')
   p.textContent=`${todo}`
-  p.style.color="blue"
+  p.style.color="red"
   p.style.fontSize="20px"
   let btn= document.createElement("button")
   btn.addEventListener('click',deleteIt)
   btn.textContent="remove"
-  btn.style.color="red";
+  btn.style.color="green";
   p.appendChild(btn)
   console.log(p);
   
@@ -40,7 +40,7 @@ document.getElementById('taskForm').onsubmit = function(event) {
   
   const output = document.getElementById('output');  
   output.innerHTML = '<h2>Submitted Tasks:</h2>';  
-  output.style.color="red"
+  output.style.color="yellow"
   output.style.fontSize="20px"
   document.querySelectorAll('#taskInputs > div').forEach(task => {  
       const inputs = task.getElementsByTagName('input');  
